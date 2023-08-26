@@ -1,0 +1,2 @@
+export const BRAND_NAME = 'Catalog Display';
+export const HERO_CONETENT = `If you're looking for Saree and suits cloth at wholesale or retail prices, look no further than my store. You'll find a wide selection of fabulous fabrics at great prices. So come on in and take a look around. I'm sure you'll find exactly what you're looking for.`;
