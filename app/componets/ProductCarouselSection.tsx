@@ -12,12 +12,12 @@ const ProductCarouselSection = () => {
                 </div>
             }
             {ProductCategory.map((item: IProductCategory) => (
-                <Sections heading={item.CategoryName}>
+                <Sections key={item.CategoryId} heading={item.CategoryName}>
                     <Carousel>
                         {
                             ProductData.filter((product: IProduct) => (product.ProductCategory === item.CategoryName))
                                 .map((product: IProduct) => (
-                                    <CatalogCard product={product} showCategory={false}></CatalogCard>
+                                    <CatalogCard key={product.ProductId} product={product} showCategory={false}></CatalogCard>
                                 ))
                         }
                     </Carousel>
