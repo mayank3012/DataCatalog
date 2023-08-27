@@ -1,5 +1,6 @@
 "use client"
 import { BRAND_NAME } from '@/utilty/constants'
+import Link from 'next/link';
 import { useEffect, useState } from 'react'
 
 const NavBar = () => {
@@ -10,7 +11,7 @@ const NavBar = () => {
     }, [])
     const handleScroll = () => {
         if (window.scrollY > 200) {
-            setNavColor("bg-white bg-opacity-10 shadow-lg");
+            setNavColor("bg-black bg-opacity-60 shadow-lg");
         }
         else {
             setNavColor("");
@@ -18,7 +19,7 @@ const NavBar = () => {
     };
     return (
         <div className={`navbar transition ease-in-out fixed p-5 z-10   ${navColor}`}>
-            <a className="cursor-pointer font-bold transition lg:text-5xl md:text-4xl sm:text-2xl text-xl  normal-case text-orange-800 md:pl-20 ">{BRAND_NAME}</a>
+            <Link href="/" className="cursor-pointer font-bold transition lg:text-5xl md:text-4xl sm:text-2xl text-xl  normal-case text-orange-800 md:pl-20 ">{BRAND_NAME}</Link>
         </div>
     )
 }

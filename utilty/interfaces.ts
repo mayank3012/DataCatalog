@@ -1,6 +1,7 @@
 export interface IProductCategory {
     CategoryId: number,
-    CategoryName: string
+    CategoryName: string,
+    Slug: string
 }
 export interface IProduct {
     ProductId: number,

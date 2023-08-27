@@ -25,3 +25,13 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.pageHeaderGradient {
+  background: rgb(0, 0, 3);
+  background: linear-gradient(
+    94deg,
+    rgba(0, 0, 3, 0.04245448179271705) 0%,
+    rgba(0, 0, 0, 0.7931547619047619) 68%,
+    rgba(1, 10, 11, 0.5326505602240896) 100%
+  );
+}
