@@ -1,7 +1,6 @@
 "use client"
 import PageHeader from "@/app/componets/PageHeader"
 import CatalogPageBody from "@/app/componets/catalog/CatalogPageBody";
-import { useRouter } from 'next/navigation'
 
 const page = ({
     params,
