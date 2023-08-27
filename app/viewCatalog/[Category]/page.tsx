@@ -8,7 +8,6 @@ const page = ({
 }: {
     params: { Category: string; };
 }) => {
-    const router = useRouter();
     return (
         <>
             <PageHeader pageHeading={params.Category} />
